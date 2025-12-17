@@ -1,0 +1,28 @@
+{
+    "name": "jricardolima/ci4-lit-rollup",
+    "description": "Integration between CI4 + LIT + ROLLUP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Masturbrain",
+            "email": "j.ricardo_lima@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "codeigniter4/framework": "^4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Masturbrain\\Ci4LitRollup\\": "src/"
+        }
+    },
+    "extra": {
+        "codeigniter4": {
+            "discoverable": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
