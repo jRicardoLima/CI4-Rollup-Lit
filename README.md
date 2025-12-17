@@ -93,5 +93,43 @@ It was chosen for this package because it is:
 
 Lit allows you to build reusable UI components **without turning your application into a SPA**, making it a natural fit for CodeIgniter-based projects.
 
+🧩 **Enabling the Helper**
+
+After installing and running frontend:init, you must load the helper so CodeIgniter can resolve frontend_script().
+
+The recommended approach is to load it globally in your BaseController:
+
+```
+namespace App\Controllers;
+
+use CodeIgniter\Controller;
+
+class BaseController extends Controller
+{
+     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+    {
+        // Load here all helpers you want to be available in your controllers that extend BaseController.
+        // Caution: Do not put the this below the parent::initController() call below.
+        $this->helpers = ['form', 'url','frontend'];
+
+        // Caution: Do not edit this line.
+        parent::initController($request, $response, $logger);
+
+        // Preload any models, libraries, etc, here.
+        // $this->session = service('session');
+    }
+}
+```
+
+🖼️ **Loading the frontend assets in views**
+
+```
+<?= frontend_script() ?>
+```
+
+✅ Best practice:
+Place this call in your main layout view (for example app/Views/layouts/default.php), so all child views automatically load the frontend assets.
+
 📄 **License**
+
 MIT

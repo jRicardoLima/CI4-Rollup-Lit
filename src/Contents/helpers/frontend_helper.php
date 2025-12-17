@@ -34,7 +34,7 @@ function frontend_manifest(): array
 }
 
 
-function frontend_script(string $entry = 'app'): string 
+function frontend_script(string $entry = 'app.js'): string 
 {
     $manifest = frontend_manifest();
 

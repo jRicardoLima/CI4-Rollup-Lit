@@ -20,8 +20,31 @@ This project follows **Semantic Versioning**.
 - Sample Lit component (`x-hello`)
 - Opinionated project structure for frontend assets
 
+## [0.1.1] - 2025-12-17
+
+- Change "minimum-stability" for stable in the composer.json file
+
+## [0.1.2] - 2025-12-17
+
+### Added
+
+- Automatic creation of `frontend_helper.php`
+- Documentation explaining how to load the helper in `BaseController`
+- Usage instructions for `frontend_script()` in layout views
+
+### Fixed
+
+- Helper not being created during `frontend:init`
+- File overwrite issue in `writeIfMissing`
+
 ### Notes
 
 - This is the first public beta release
 - API is considered stable, but minor adjustments may occur
 - No breaking changes are expected before `v1.0.0`
+
+## [0.1.3] - 2025-12-17
+
+### Fixed
+
+- Fixed "app.js" in default parameter on frontend_script function in the frontend_helper() file.
