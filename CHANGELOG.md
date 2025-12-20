@@ -48,3 +48,9 @@ This project follows **Semantic Versioning**.
 ### Fixed
 
 - Fixed "app.js" in default parameter on frontend_script function in the frontend_helper() file.
+
+## [0.1.4] - 2025-12-20
+
+### Added
+
+- The rimraf package was installed to "clean up" the Rollup builds in the public/asset directory

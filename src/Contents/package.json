@@ -7,7 +7,7 @@
         "email": "j.ricardo_lima@outlook.com"
     },
     "scripts": {
-        "clean": "rm -rf public/assets/*",
+        "clean": "rimraf public/assets/*",
         "build": "npm run clean && rollup -c",
         "dev": "rollup -c -w"
     },
