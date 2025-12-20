@@ -22,6 +22,7 @@
         "typescript": "^5.9.3"
     },
     "dependencies": {
-        "lit": "^3.3.1"
+        "lit": "^3.3.1",
+        "rimraf": "^6.1.2"
     }
 }
