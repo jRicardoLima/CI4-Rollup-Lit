@@ -22,7 +22,7 @@ This package provides a modern frontend workflow **without introducing SPA compl
 Install via Composer and initialize the frontend:
 
 ```bash
-composer require masturbrain/ci4-lit-rollup
+composer require jricardolima/ci4-lit-rollup
 php spark frontend:init
 php spark frontend:install
 php spark frontend:build
