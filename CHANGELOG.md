@@ -54,3 +54,9 @@ This project follows **Semantic Versioning**.
 ### Added
 
 - The rimraf package was installed to "clean up" the Rollup builds in the public/asset directory
+
+## [0.1.5] - 2025-12-20
+
+### Fixed
+
+- The rimraf package has been added to helpers/package.json
