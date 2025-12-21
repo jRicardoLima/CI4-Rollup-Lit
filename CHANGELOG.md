@@ -62,3 +62,19 @@ This project follows **Semantic Versioning**.
 ### Fixed
 
 - The rimraf package has been added to helpers/package.json
+
+## [0.1.6-beta] - 2025-12-21
+
+### Added
+
+- Add suport css files in the manifest.js
+
+## [0.1.7-beta] - 2025-12-21
+
+### Added
+
+- Create new plugin in the rollup.config.js file that will write the app.css in the manifest.js
+
+### Fixed
+
+- Added "rollup-plugin-postcss" in the package.json
