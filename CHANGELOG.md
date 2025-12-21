@@ -20,11 +20,11 @@ This project follows **Semantic Versioning**.
 - Sample Lit component (`x-hello`)
 - Opinionated project structure for frontend assets
 
-## [0.1.1] - 2025-12-17
+## [0.1.1-beta] - 2025-12-17
 
 - Change "minimum-stability" for stable in the composer.json file
 
-## [0.1.2] - 2025-12-17
+## [0.1.2-beta] - 2025-12-17
 
 ### Added
 
@@ -42,20 +42,22 @@ This project follows **Semantic Versioning**.
 - This is the first public beta release
 - API is considered stable, but minor adjustments may occur
 - No breaking changes are expected before `v1.0.0`
+- After updating, run `php spark frontend:init` to generate new scripts and helpers.
+- Existing files are not overwritten.
 
-## [0.1.3] - 2025-12-17
+## [0.1.3-beta] - 2025-12-17
 
 ### Fixed
 
 - Fixed "app.js" in default parameter on frontend_script function in the frontend_helper() file.
 
-## [0.1.4] - 2025-12-20
+## [0.1.4-beta] - 2025-12-20
 
 ### Added
 
-- The rimraf package was installed to "clean up" the Rollup builds in the public/asset directory
+- The rimraf package was installed to "clean up" the Rollup builds in the public/assets directory
 
-## [0.1.5] - 2025-12-20
+## [0.1.5-beta] - 2025-12-20
 
 ### Fixed
 

@@ -67,6 +67,7 @@ class FrontendInit extends BaseFrontendCommand
             $root . 'writable/resources/frontend/components',
             $root . 'public/assets',
             $root . 'app/Helpers',
+            $root . 'writable/resources/frontend/scripts',
           ];
 
           foreach ($paths as $dir) {
@@ -79,6 +80,7 @@ class FrontendInit extends BaseFrontendCommand
           $this->writeIfMissing($root . 'package.json', $this->stubs('package.json'));
           $this->writeIfMissing($root . 'tsconfig.json', $this->stubs('tsconfig.json'));
           $this->writeIfMissing($root .'app/Helpers/frontend_helper.php',$this->stubs('helpers/frontend_helper.php'));
+          $this->writeIfMissing($root .'writable/resources/frontend/scripts/patch-manifest.mjs',$this->stubs('scripts/patch-manifest.mjs'));
 
           CLI::write('Base files created (or already existed)', 'green');
 

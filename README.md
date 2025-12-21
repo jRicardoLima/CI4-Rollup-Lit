@@ -130,6 +130,20 @@ class BaseController extends Controller
 ✅ Best practice:
 Place this call in your main layout view (for example app/Views/layouts/default.php), so all child views automatically load the frontend assets.
 
+## 🔄 Updating
+
+After updating the package via Composer:
+
+composer update jricardolima/ci4-lit-rollup
+
+Run the init command again to generate any new files:
+
+php spark frontend:init
+
+⚠️ Existing configuration files will NOT be overwritten.
+If a new version introduces changes to configs or scripts,
+please check the CHANGELOG for manual steps.
+
 📄 **License**
 
 MIT

@@ -8,7 +8,7 @@
     },
     "scripts": {
         "clean": "rimraf public/assets/*",
-        "build": "npm run clean && rollup -c",
+        "build": "npm run clean && rollup -c && node scripts/patch-manifest.mjs",
         "dev": "rollup -c -w"
     },
     "devDependencies": {

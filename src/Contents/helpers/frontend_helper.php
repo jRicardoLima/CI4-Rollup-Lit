@@ -57,3 +57,28 @@ function frontend_script(string $entry = 'app.js'): string
 
     return "<script type='module' src='{$escSrc}'></script>";
 }
+
+function frontend_css(string $entry = "app.css"): string 
+{
+    $manifest = frontend_manifest();
+
+    $value = $manifest[$entry] ?? null;
+
+    $src = null;
+
+    if(is_string($value)) {
+        $src = $value;
+    } else if (is_array($value) && isset($value['file']) && is_string($value['file'])) {
+        $src = '/assets/'.ltrim($value['file'],'/');
+    }
+
+    if($src === null) {
+        $exceptStr = esc($entry);
+
+        return "<!-- frontend_style: Manifest not found {$exceptStr}-->";
+    }
+
+    $escSrc = esc($src);
+
+    return "<link rel='stylesheet' href='{$escSrc}'/>";
+}
